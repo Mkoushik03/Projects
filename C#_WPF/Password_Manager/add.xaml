@@ -1,0 +1,96 @@
+﻿<Window x:Class="Password_Manager.add"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Password_Manager"
+        mc:Ignorable="d"
+        Title="ADD" Icon="lock.png" Height="600" Width="400" Background="Black" BorderThickness="3.5" ResizeMode="NoResize" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" Closed="Window_Closed" MaxWidth="400" MaxHeight="600" MinWidth="400" >
+    <Window.BorderBrush>
+        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+            <GradientStop Color="#FF1DDA84"/>
+            <GradientStop Color="#FFF94C5C" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.BorderBrush>
+    <Grid MinWidth="380" MinHeight="560" Width="380" Height="560" Margin="0">
+        <ComboBox HorizontalAlignment="Left" Height="35" Margin="88,62,0,0" VerticalAlignment="Top" Width="210" VerticalContentAlignment="Center" FontSize="16" FontFamily="Segoe UI Semibold" Background="{x:Null}" BorderBrush="#FFF14646" BorderThickness="2" FontWeight="Bold" SelectedIndex="0" Foreground="Black">
+            <ComboBoxItem Content="Gmail" FontWeight="Bold" FontSize="16" FontFamily="Segoe UI Semilight"/>
+            <ComboBoxItem Content="Facebook" FontWeight="Bold" FontSize="16" FontFamily="Segoe UI Semilight"/>
+            <ComboBoxItem Content="Twitter" FontWeight="Bold" FontSize="16" FontFamily="Segoe UI Semilight"/>
+            <ComboBoxItem Content="Games" FontWeight="Bold" FontSize="16" FontFamily="Segoe UI Semilight"/>
+        </ComboBox>
+
+        <Label Content="Account Type" HorizontalAlignment="Left" Height="35" Margin="88,17,0,0" VerticalAlignment="Top" Width="108" Foreground="#FFE45757" FontWeight="Bold" FontFamily="Segoe UI Emoji" FontSize="15" BorderBrush="#FF03B9CB" BorderThickness="0" VerticalContentAlignment="Bottom"/>
+
+        <Label Content="Username" HorizontalAlignment="Left" Height="35" Margin="88,114,0,0" VerticalAlignment="Top" Width="225" Foreground="#FFE45757" FontWeight="Bold" FontFamily="Segoe UI Emoji" FontSize="15" BorderBrush="#FF03B9CB" BorderThickness="0" VerticalContentAlignment="Bottom"/>
+
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="88,154,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" VerticalContentAlignment="Center" FontWeight="Bold" FontFamily="Segoe UI Historic" FontSize="16" Background="{x:Null}" BorderThickness="0,2" Foreground="#FFF38D26" CaretBrush="#FFF9F5F5" HorizontalContentAlignment="Center">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="900,140" StartPoint="1125,175" SpreadMethod="Reflect" MappingMode="Absolute">
+                    <GradientStop Color="#FF9920AC"/>
+                    <GradientStop Color="#FF8FC31F" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+
+        <Label Content="Email" HorizontalAlignment="Left" Height="35" Margin="88,211,0,0" VerticalAlignment="Top" Foreground="#FFE45757" Width="225" FontWeight="Bold" FontFamily="Segoe UI Emoji" FontSize="15" BorderBrush="#FF03B9CB" BorderThickness="0" VerticalContentAlignment="Bottom"/>
+
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="88,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" VerticalContentAlignment="Center" FontWeight="Bold" FontFamily="Segoe UI Historic" FontSize="16" Background="{x:Null}" BorderThickness="0,2" Foreground="#FFF38D26" CaretBrush="#FFF9F5F5" HorizontalContentAlignment="Center" TextChanged="TextBox_TextChanged" >
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="900,140" StartPoint="1125,175" SpreadMethod="Reflect" MappingMode="Absolute">
+                    <GradientStop Color="#FF9920AC"/>
+                    <GradientStop Color="#FF8FC31F" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+
+        <Label Content="Password" HorizontalAlignment="Left" Height="35" Margin="88,305,0,0" VerticalAlignment="Top" Foreground="#FFE45757" FontWeight="Bold" FontFamily="Segoe UI Emoji" FontSize="15" Width="225" BorderBrush="#FF03B9CB" BorderThickness="0" VerticalContentAlignment="Bottom"/>
+
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="88,340,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" VerticalContentAlignment="Center" FontWeight="Bold" FontFamily="Segoe UI Historic" FontSize="16" Background="{x:Null}" BorderThickness="0,2" Foreground="#FFF38D26" CaretBrush="#FFF9F5F5" HorizontalContentAlignment="Center">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="900,140" StartPoint="1125,175" SpreadMethod="Reflect" MappingMode="Absolute">
+                    <GradientStop Color="#FF9920AC"/>
+                    <GradientStop Color="#FF8FC31F" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Button  HorizontalAlignment="Left" Height="65" Margin="155,483,0,0" VerticalAlignment="Top" Width="65" >
+            <Image Source="add3.png" Width="50" Height="50" />
+            <Button.Style>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Background" Value="Black" />
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="{x:Type Button}">
+                                <Border  BorderThickness="2" Background="{TemplateBinding Background}">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                                    <Border.BorderBrush>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="#FF40B1D3" Offset="0"/>
+                                            <GradientStop Color="#FF8FC31F" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </Border.BorderBrush>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Peru"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+        </Button>
+        <Label Content="Recovery" HorizontalAlignment="Left" Height="35" Margin="88,397,0,0" VerticalAlignment="Top" Foreground="#FFE45757" FontWeight="Bold" FontFamily="Segoe UI Emoji" FontSize="15" Width="225" BorderBrush="#FF03B9CB" BorderThickness="0" VerticalContentAlignment="Bottom"/>
+        <TextBox HorizontalAlignment="Left" Height="35" Margin="88,432,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="225" VerticalContentAlignment="Center" FontWeight="Bold" FontFamily="Segoe UI Historic" FontSize="16" Background="{x:Null}" BorderThickness="0,2" Foreground="#FFF38D26" CaretBrush="#FFF9F5F5" HorizontalContentAlignment="Center">
+            <TextBox.BorderBrush>
+                <LinearGradientBrush EndPoint="900,140" StartPoint="1125,175" SpreadMethod="Reflect" MappingMode="Absolute">
+                    <GradientStop Color="#FF9920AC"/>
+                    <GradientStop Color="#FF8FC31F" Offset="1"/>
+                </LinearGradientBrush>
+            </TextBox.BorderBrush>
+        </TextBox>
+
+    </Grid>
+</Window>
