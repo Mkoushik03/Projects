@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:gravity="center">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Welcome"
+              android:padding="5dp"
+              android:textStyle="bold"
+              android:textSize="20sp"
+              android:textColor="@color/hnt"
+              />
+          <TextView
+              android:id="@+id/txtusername"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="dfdgdfg"
+              android:padding="5dp"
+              android:textSize="24sp"
+              android:textStyle="bold"
+              android:textColor="@color/txt"
+              />
+
+      </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Now manage all your passwords"
+                android:textSize="20sp"
+                android:textColor="@color/hnt"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/add_button"
+                android:src="@drawable/note_add" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp">
+
+            <ImageButton
+                android:id="@+id/show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/show_button"
+                android:src="@drawable/slideshow" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            >
+
+            <ImageButton
+                android:id="@+id/update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/autorenew"
+                android:background="@drawable/btnbg2"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

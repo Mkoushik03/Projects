@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name" translatable="false">Passwordmanager</string>
+    <string name="password" translatable="false"><font size="22">Password</font></string>
+    <string name="Username" translatable="false"><font size="22">Username</font></string>
+    <string name="Answar" translatable="false">Answer</string>
+    <string name="ConfirmPassword" translatable="false">Confirm Password</string>
+    <string name="ScecurityQuestion" translatable="false">Enter a Security Question</string>
+    <string name="Answer" translatable="false">Security Question Answer</string>
+    <string name="AccountTitle">Account Title</string>
+    <string name="Email">Email</string>
+</resources>
