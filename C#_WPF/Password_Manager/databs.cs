@@ -41,12 +41,25 @@ namespace Password_Manager
 
         public object ShowDataInGridView(string Query_)
         {
+            /*
             SqlDataAdapter dr = new SqlDataAdapter(Query_, ConnectionString);
             DataSet ds = new DataSet();
             dr.Fill(ds);
             object dataum = ds.Tables[0];
             return dataum;
-        }
-       
+            */
+            SqlDataAdapter dr = new SqlDataAdapter(Query_, ConnectionString);
+            DataSet ds = new DataSet();
+            object dataum ;
+            if (dr != null)
+            {
+                dr.Fill(ds);          
+                if(ds.Tables.Count > 0 && ds.Tables[0].Rows.Count > 0)
+                {
+	                dataum == ds.Tables[0];
+                }
+            }
+            return dataum;
+        }       
     }
 }
